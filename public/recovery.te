@@ -135,7 +135,8 @@ recovery_only(`
   allow recovery kernel:process setsched;
 
   # Required for mount /cache
-  allow recovery cache_file:dir mount
+  allow recovery cache_file:dir mount;
+
 ')
 
 ###
