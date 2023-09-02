@@ -133,6 +133,9 @@ recovery_only(`
   # This line seems suspect, as it should not really need to
   # set scheduling parameters for a kernel domain task.
   allow recovery kernel:process setsched;
+
+  # Required for mount /cache
+  allow recovery cache_file:dir mount
 ')
 
 ###
